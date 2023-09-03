@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:wght@100;300&family=Rubik:wght@300&display=swap');
+
 :root {
     --primary: #360369;
     --secondry: aqua;
@@ -158,19 +159,20 @@ body.main .home-page {
     display: none;
 }
 
-
+/* For Loader */
 .loading{
     background-color: #360369;
+    border-radius: 50%;
 }
 
 .loading div{
     background-color: #360369;
-    border: 16px solid #f3f3f3;
+    border: 18px solid #f3f3f3;
     border-radius: 50%;
-    border-top: 16px solid blue;
-    border-right: 16px solid green;
-    border-bottom: 16px solid red;
-    border-left: 16px solid yellow;
+    border-top: 18px solid blue;
+    border-right: 18px solid green;
+    border-bottom: 18px solid red;
+    border-left: 18px solid yellow;
     width: 120px;
     height: 120px;
     animation: spin 2s linear infinite;

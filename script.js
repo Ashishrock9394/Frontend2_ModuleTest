@@ -57,7 +57,7 @@ window.addEventListener("DOMContentLoaded", () => {
                             document.body.classList.remove('home');
 
                             document.querySelector("#location b").textContent = data.name;
-                            document.querySelector("#speed b").textContent = (data.wind.speed * 3.6) + "kmph";
+                            document.querySelector("#speed b").textContent = (data.wind.speed * 3.6) + " kmph";
                             document.querySelector("#humidity b").textContent = data.main.humidity;
                             document.querySelector("#timezone b").textContent = secondsToTimeZoneString(data.timezone);
                             document.querySelector("#pressure b").textContent = data.main.pressure;
