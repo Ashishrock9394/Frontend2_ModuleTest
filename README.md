@@ -1,7 +1,7 @@
 
 # Frontend2-Module Test
 
-- [@Click Here](https://ashishrock9394.github.io/Frontend2_ModuleTest/)
+- [Click Here](https://ashishrock9394.github.io/Frontend2_ModuleTest/)
 
 A Weather app to fetch the weather data from the Api for the submission in AccioJobs Frontend2 Module Test Aug 2023.
 
@@ -37,7 +37,7 @@ Run in Web-Browser
 ```bash
   Run index.html
 ```
-To view playlist page
+To view Weather Data
 
 ```bash
   Click on Fetch Data
