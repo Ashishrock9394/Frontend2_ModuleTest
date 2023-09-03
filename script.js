@@ -50,14 +50,15 @@ window.addEventListener("DOMContentLoaded", () => {
                      * Fetch weather information                                          
                     */
 
-                    fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=cb38692bd004c473f1b609a257eb5b37`)
+                    // API Key = af2e31f71eae5b62ce681b926069eba7
+                    fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=af2e31f71eae5b62ce681b926069eba7`)
                         .then(e => e.json())
                         .then(data => {
                             document.body.classList.add('main');
                             document.body.classList.remove('home');
 
                             document.querySelector("#location b").textContent = data.name;
-                            document.querySelector("#speed b").textContent = (data.wind.speed * 3.6) + " kmph";
+                            document.querySelector("#speed b").textContent = (data.wind.speed * 3.6).toFixed(2) + " kmph";
                             document.querySelector("#humidity b").textContent = data.main.humidity;
                             document.querySelector("#timezone b").textContent = secondsToTimeZoneString(data.timezone);
                             document.querySelector("#pressure b").textContent = data.main.pressure;
